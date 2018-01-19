@@ -1,0 +1,101 @@
+.top{
+	width: 990px;
+	border-bottom: 2px solid #e6e6e6;
+	margin: 0 auto;
+}
+
+header ul{
+	list-style: none;
+	height: 27px;
+	margin-left:100px;
+	text-align: center; 
+}
+header ul li{
+	height: 42px;
+	width: 150px;
+	display: inline-block;
+	line-height: 42px;
+	margin-right:40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'iconfont';
+}
+header ul li:nth-child(1){
+	border-bottom: 2px solid #ff0036;
+}
+header ul li:nth-child(1) span{
+	color: #ff0036;
+	font-size: 20px;
+}
+header ul li:nth-child(2) span{
+	color: #999;
+	font-size: 20px;
+}
+header ul li:nth-child(3) span{
+	color: #999;
+	font-size: 20px;
+}
+header ul li:nth-child(4) span{
+	color: #999;
+	font-size: 20px;
+}
+article{
+	overflow: hidden;
+	margin: 100px auto;
+}
+select{
+	height: 35px;
+}
+input{
+	height: 29px;
+}
+.register{
+	margin-left:800px;
+}
+.bottom{
+	margin-top:20px;
+	margin-left:800px;
+}
+.bottom span{
+	float: left;
+	line-height: 34px;
+}
+.verify{
+	height: 34px;
+	width: 300px;
+	background: #e8e8e8;
+	position: relative;
+	line-height: 34px;
+	text-align:center;
+	font-size: 10px;
+	color: #4d4d4d;
+	float: left;
+	margin-left: 20px;
+}
+.slide{
+	height: 34px;
+	width: 20px;
+	background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+	animation: slide 2s linear infinite alternate;
+}
+@keyframes slide{
+	0%{
+		position: absolute;
+		left: 0;
+	}
+	100%{
+		position: absolute;
+		left: 300px;
+	}
+}
+.next{
+	height: 34px;
+	width: 180px;
+	background: #e8e8e8;
+	float: left;
+	margin-left: 900px;
+	margin-top: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 34px;
+}

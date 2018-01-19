@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+html,body{
+	height: 100%;
+	font-size: 20px;
+}
+.headAds{
+	height: db(460rem);
+	width: 100%;
+	position: relative;
+	.turns{
+		height: db(450rem);
+		width: 100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		img{
+		height: db(450rem);
+		width: 100%;
+		}
+	}
+	.bottomCover{
+		width: 100%;
+		height: db(34rem);
+		position: absolute;
+		bottom:0;
+		left: 0;
+	}
+	.search{
+	width: 75%;
+	height: db(80rem);
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	border-radius: db(80rem);
+	background: white;
+	position: absolute;
+	top: db(60rem);
+	left: db(20rem);
+	text-align: center;
+	line-height: db(80rem);
+	img{
+		margin-left: db(150rem);
+		margin-top: db(25rem);
+		float: left;
+	}
+	input{
+		height: db(75rem);
+		width: 45%;
+		border: none;
+		outline: none;
+		opacity: 0.6;
+		filter:alpha(opacity=60);
+		float: left;
+		margin-left: db(3rem);
+		}
+	 }
+	 .circle{
+	 	height: db(80rem);
+	 	width: 10.6%;
+		background: rgba(255,255,255,0.6);
+		border-radius: 50%;
+		position: absolute;
+		right: db(40rem);
+		top: db(60rem);
+		text-align: center;
+		img{
+			height: 75%;
+			margin-top: db(5rem);
+		}
+	 }
+	 .points{
+	 	height: db(16rem);
+	 	width: 15%;
+	 	position: absolute;
+	 	bottom: db(30rem);
+	 	left: 42%;
+	 	text-align: center;
+	 	span{
+	 		height: db(20rem);
+	 		width: 18%;
+	 		border-radius: 50%;
+	 		background: white;
+	 		display: inline-block;
+	 		position: relative;
+	 	}
+	 }
+}
+.navi{
+	width: 100%;
+	height: db(105rem);
+	position: relative;
+	img{
+		margin-left: 8%;
+		width: 14%;
+	}
+}
+.classify{
+	height: db(40rem);
+	width: 100%;
+	span{
+		height: db(40rem);
+		width: 14%;
+		display: inline-block;
+		margin-left: 8.5%;
+		font-size: db(20rem);
+	}
+}
+.admid{
+	img{
+		width: 100%;
+		height: db(335rem);
+	}
+}
+.recommend{
+	height: db(70rem);
+	width: 100%;
+	border-top: db(10rem) solid #f5f5f5;
+	text-align: center;
+	line-height: db(70rem);
+	span{
+		font-size: db(30rem);
+	}
+}
+.reAds{
+	height: db(323rem);
+	width: 100%;
+	border: db(2rem) solid #f5f5f5;
+	.reAd1{
+		height: 100%;
+		width: 49%;
+		float: left;
+		position: relative;
+		border-right: db(2rem) solid #f5f5f5;
+		img{
+			float: right;
+			height: 100%;
+			width: 100%;
+		}
+		p{
+			font-size: db(30rem);
+			color: #f9ce33;
+			position: absolute;
+			top: 0;
+			left: 8%;
+		}
+		span{
+			font-size: db(20rem);
+			margin-left: 8%;
+			position: absolute;
+			top: 25%;
+			left: 0;
+		}
+	}
+	.reAd2{
+		height: 49%;
+		width: 50%;
+		float: left;
+		position: relative;
+		border-bottom: db(2rem) solid #f5f5f5;
+		img{
+			float: right;
+			height: 100%;
+			width: 100%;
+		}
+		p{
+			font-size: db(30rem);
+			color: #ea5e7f;
+			position: absolute;
+			top: 0;
+			left: 8%;
+		}
+		span{
+			font-size: db(20rem);
+			margin-left: 8%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+	}
+	.reAd3{
+		height: 50%;
+		width: 50%;
+		float: left;
+		position: relative;
+		img{
+			float: right;
+			height: 100%;
+			width: 100%;
+		}
+		p{
+			font-size: db(30rem);
+			color: #66c92a;
+			position: absolute;
+			top: 0;
+			left: 8%;
+		}
+		span{
+			font-size: db(20rem);
+			margin-left: 8%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+	}
+}
+.product{
+	height: db(70rem);
+	width: 100%;
+	border-top: db(10rem) solid #f5f5f5;
+	border-bottom: db(5rem) solid #f5f5f5;
+	text-align: center;
+	line-height: db(70rem);
+	span{
+		font-size: db(30rem);
+	}
+}
+.productDtls{
+	width: 100%;
+	height: db(1100rem);
+	margin-bottom: db(55rem);
+	.milks{
+		height: db(540rem);
+		width: 49%;
+		border-right: db(5rem) solid #f5f5f5;
+		border-bottom: db(2rem) solid #f5f5f5;
+		float: left;
+		img{
+			height: db(397rem);
+			width: 100%;
+			}
+		.price{
+			height: db(133rem);
+			width: 100%;
+			border-right: db(5rem) solid #f5f5f5;
+			border-bottom: db(5rem) solid #f5f5f5;
+			p{
+				font-size: db(20rem);
+				margin: 0;
+			}
+			span{
+				font-size: db(20rem);
+				color: #ff3456;
+			}
+			img{
+				float: right;
+				height: db(40rem);
+				width: db(40rem);
+			}
+		}
+	}
+}
+.footer{
+	height: db(80rem);
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background: white;
+	.footerSon{
+		width: 25%;
+		height: db(80rem);
+		float: left;
+		img{
+			height: db(50rem);
+		}
+		p{
+			margin: 0;
+			font-size: db(20rem);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+html,body{
+	height: 100%;
+	font-size: 20px;
+}
+div{
+	height:5rem;
+	width: 5rem;
+	background: red;
+}
+.box{
+	height: db(167rem);
+	width: db(167rem);
+	background: pink;
+	span{
+		font-size: 14px;
+	}
+}
+@media screen and (min-width:750px){
+	.box{
+		span{
+			font-size: 25px;
+		}
+	}
+}

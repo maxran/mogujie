@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import "pub.scss";
+$col:blue;
+$le:left;
+$a:100px;
+.test1{
+  height: 100px;
+  width: 100px;
+  background: deepskyblue;
+}
+.box1{
+	height:$a*2;
+	width:$a/1.5;
+    //减号加空格
+	font-size:$a - 80px;
+	background:$col;
+	border:3px solid palegreen;
+	border-top-#{$le}-radius:20px;
+    &:hover{
+      background: orangered;
+    }
+	span{
+      color: mediumvioletred;
+      i{
+        color: greenyellow;
+      }
+    }
+}
+.ell{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+//p{
+//  width: 150px;
+//  color:deeppink;
+//  @extend .ell;
+//}
+.box2{
+  @extend .test1
+}
+//@mixin ell($b){
+//  overflow: hidden;
+//  //white-space: nowrap;
+//  text-overflow:ellipsis;
+//  display: -webkit-box;
+//  -webkit-line-clamp: $b;
+//  -webkit-box-orient: vertical;
+//}
+p{
+  width: 100px;
+  @include ell(2);
+}
+@mixin pub($a,$b,$c,$d:green){
+  height: $a;
+  width: $b;
+  font-size: $c;
+  background: $d;
+}
+div{
+  @include pub(150px,150px,50px);
+  box-shadow: 10px 10px 20px darken(red,5%);
+}
+@function db($num){
+  @return $num/3;
+}
+.box3{
+  height: db(150px);
+  width: db(150px);
+  background: blueviolet;
+}

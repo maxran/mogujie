@@ -1,0 +1,7 @@
+@mixin ell($b){
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $b;
+  -webkit-box-orient: vertical;
+}
